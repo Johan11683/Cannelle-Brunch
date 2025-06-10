@@ -1,0 +1,19 @@
+@import './variables';
+@import './layout';
+@import './header';
+
+:root {
+  --cannelle-vert: #454311;
+  --cannelle-beige: #F4E9E3;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+}
+
+main {
+  padding-top: 70px; // correspond à la hauteur du header fixe
+}
