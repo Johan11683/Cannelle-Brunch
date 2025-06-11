@@ -14,7 +14,7 @@ export default function GalleryPage() {
           rel="noopener noreferrer"
         >
           <img
-            src="../images/logos/insta.webp"
+            src="/Cannelle-Brunch/images/logos/insta.webp"
             alt="Instagram Cannelle Brunch"
             className="home__link-icon"
           />

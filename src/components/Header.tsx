@@ -6,7 +6,8 @@ export default function Header() {
     <header className="header">
       <div className="header__container">
         <Link to="/" className="header__logo">
-          <img src='../images/logos/cannelle-logo.png' alt="Logo Cannelle Brunch" />
+          <img src="/Cannelle-Brunch/images/logos/cannelle-logo.png" alt="Logo Cannelle Brunch" />
+
         </Link>
         <nav className="header__nav">
           <Link to="/">Accueil</Link>

@@ -50,7 +50,7 @@ export default function Home() {
           {['menu1.webp', 'menu2.webp'].map((src, index) => (
             <img
               key={index}
-              src={`../images/${src}`}
+              src={`${import.meta.env.BASE_URL}images/${src}`}
               alt={`Menu Cannelle Brunch ${index + 1}`}
               className={`home__menu-image ${zoomedIndex === index ? 'zoomed' : ''}`}
               onClick={() => handleImageClick(index)}
@@ -68,12 +68,11 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <img
-            src="../images/logos/insta.webp"
+            src={`${import.meta.env.BASE_URL}images/logos/insta.webp`}
             alt="Instagram Cannelle Brunch"
             className="home__link-icon"
           />
         </a>
-
       </section>
     </main>
   );
