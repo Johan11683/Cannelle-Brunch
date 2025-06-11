@@ -1,19 +1,64 @@
-@import './variables';
-@import './layout';
-@import './header';
-
-:root {
-  --cannelle-vert: #454311;
-  --cannelle-beige: #F4E9E3;
-}
+@use './variables';
+@use './header';
+@use './footer';
+@use './home';
 
 
-body {
+/* === RESET GLOBAL === */
+* {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fff;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-main {
-  padding-top: 70px; // correspond à la hauteur du header fixe
+html, body {
+  height: 100%;
+  font-family: var(--font-main);
+  background-color: var(--cannelle-beige);
+  color: var(--cannelle-vert);
+  scroll-behavior: smooth;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  font-family: var(font-main);
+  font-size: 1rem;
+  color: var(--cannelle-beige);
+
+
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--cannelle-vert);
+  outline-offset: 4px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 10;
+
+}
+

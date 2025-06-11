@@ -1,0 +1,48 @@
+.hero {
+  width: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cannelle-beige);
+
+  &__container {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__cover {
+    width: 95%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 30px;
+    display: block;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+
+
+  @media (max-width: 1024px) {
+    &__cover {
+      height: 240px;
+      border-radius: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__cover {
+      height: 200px;
+      width: 100%;
+      border-radius: 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__cover {
+      height: 160px;
+      border-radius: 12px;
+    }
+  }
+}
