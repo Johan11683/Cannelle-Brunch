@@ -6,7 +6,7 @@ export default function GalleryPage() {
     <section className="gallery-page">
       <h2>Galerie photo</h2>
       <p className="home__text home__text--cta">
-        Pour voir nos menus à jour et commander, c'est par là ! 👉
+        Pour voir nos menus à jour et commander, c'est par là ! 👇
         <a
           href="https://www.instagram.com/cannelle.brunch/"
           className="home__link"
