@@ -1,6 +1,6 @@
 {
   "name": "cannelle-brunch",
-  "homepage": "https://<Johan11683>.github.io/Cannelle-Brunch/",
+  "homepage": "https://johan11683.github.io/Cannelle-Brunch/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,8 +9,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && cp dist/index.html dist/404.html && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.1.0",
